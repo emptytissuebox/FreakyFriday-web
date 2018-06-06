@@ -1,3 +1,5 @@
+{
+"DATA":
 [
   {
     "id": 1,
@@ -68,5 +70,16 @@
     "profile": "Software",
     "specialty": "Debugging",
     "specialization": "Innovation"
+  },
+    {
+    "id": 8,
+    "name": "Henk Kees",
+    "gender": "male",
+    "image": "https://i.imgur.com/JYnucGl.jpg",
+    "year" : "4",
+    "profile": "Software",
+    "specialty": "Debugging",
+    "specialization": "Innovation"
   }
 ]
+}
