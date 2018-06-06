@@ -1,0 +1,75 @@
+body {
+	background-image: url(img src="https://i.imgur.com/wZYCLRt.jpg");
+	background-size: cover;
+
+}
+h1 {
+	text-align: center;
+	font-size: 33px;
+	padding-top : 5%;
+}
+
+.avatar {
+	width: 100px;
+	height: auto;
+	position: absolute;
+	margin-top: -20%;
+	margin-left: 30%;
+}
+
+.LogInBox {
+	background-color: rgb(34, 34, 34);
+	width: 320px;
+	height: 420px;
+	margin-top: 10%;
+	margin-left: 37%;
+	position: relative;
+	color: #fff;
+	padding: 10px 20px;
+	font-family: "Futura Light", Helvetica, arial, sans-serif;
+}
+
+.LogInBox p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.LogInBox input {
+	width: 85%;
+	margin-bottom: 20px;
+}
+
+.LogInBox input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+}
+
+.LogInBox input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: rgb(103, 51, 99);
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.LogInBox input[type="submit"]:hover {
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+.LogInBox a {
+	text-decoration: underline;
+	font-family: "Futura Light", Helvetica, arial, sans-serif;
+	color: #fff;
+	padding: 2px;
+	line-height: 30px;
+}
+

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Humphrey Gilbert",
+    "gender": "male",
+    "image": "https://i.imgur.com/4L8zz6L.png",
+    "year" : "2",
+    "profile": "Media",
+    "specialty": "JS and HTML",
+    "specialization": "Game Design"
+  },
+  {
+    "id": 2,
+    "name": "Gregory Padilla",
+    "gender": "male",
+    "image": "https://i.imgur.com/4L8zz6L.png",
+    "year" : "1",
+    "profile": "Media",
+    "specialty": "Graphic Design",
+    "specialization": "Game Design"
+  },
+  {
+    "id": 3,
+    "name": "Reed West",
+    "gender": "male",
+    "image": "https://i.imgur.com/4L8zz6L.png",
+    "year" : "1",
+    "profile": "Software",
+    "specialty": "C#",
+    "specialization": "Cyber Security"
+  },
+  {
+    "id": 4,
+    "name": "Diane Clark",
+    "gender": "female",
+    "image": "https://i.imgur.com/d04QTef.jpg",
+    "year" : "2",
+    "profile": "Tech",
+    "specialty": "C++",
+    "specialization": "Game Design"
+  },
+  {
+    "id": 5,
+    "name": "Everett Farley",
+    "gender": "male",
+    "image": "https://i.imgur.com/4L8zz6L.png",
+    "year" : "3",
+    "profile": "Software",
+    "specialty": "C#",
+    "specialization": "Cyber Security"
+  },
+  {
+    "id": 6,
+    "name": "Mai Dunlap",
+    "gender": "female",
+    "image": "https://i.imgur.com/d04QTef.jpg",
+    "year" : "1",
+    "profile": "Software",
+    "specialty": "Debugging",
+    "specialization": "Innovation"
+  },
+  {
+    "id": 7,
+    "name": "Alinity Dunlap",
+    "gender": "female",
+    "image": "https://i.imgur.com/JYnucGl.jpg",
+    "year" : "1",
+    "profile": "Software",
+    "specialty": "Debugging",
+    "specialization": "Innovation"
+  }
+]

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dataladen.js"></script>
+</head>
+<body>
+
+<!-- DIMMER -->
+<div id="dimmer">
+	<span></span>
+</div>
+
+<!-- MODAL POP-UP FOR PROFILES -->
+<div id="ModalProfile" class="modal">
+  
+  <div class="profile-content">
+    <span class="close">&times;</span>
+    <form>
+	    <img src="MediaFiles/UserIcon3.jpg">
+	    	<h2 style="text-align: center;"><label> Name User </label></h2>
+	    	<h2>Year: </h2> <label> </label>
+	    	<h2>Profile: </h2>
+	    	<h2>Specialty: </h2>
+	    	<h2>specialization: </h2>
+    </form>
+    <button class="addFriend"></button>
+    <button class="newMessage"></button>
+  </div>
+</div>
+
+<!-- MODAL POP-UP FOR DIRECT MESSAGING -->
+<div id="ModalMessage" class="modalMssg">
+  <!-- Modal content -->
+  <div class="content">
+    <span class="close">&times;</span>
+    <div class="friendList">
+	    	<a href="#"><img src="MediaFiles/userIcon2.png"></a> <a href="#"><p> Friend1</p></a>
+	    	<a><img src="MediaFiles/UserIcon3.jpg"></a> <a><p> Friend2</p></a>
+	    	<a><img src="MediaFiles/UserIcon5.jpg"></a> <a><p> Friend3</p></a>
+	    	<a><img src="MediaFiles/UserIcon5.jpg"></a> <a><p> Friend4</p></a>
+	    	<a><img src="MediaFiles/UserIcon5.jpg"></a> <a><p> Friend5</p></a>
+
+    </div>
+    <div class="messages">
+    	<span class="FriendName"><label>Name of friend</label></span>
+
+    	<div class="messageBubbles">
+    		OwO
+    	</div>
+
+    	<input type="text" name="messageBox"><input type="submit" name="" value="send">
+    </div>
+    <button class="addFriend"></button>
+    <button class="newMessage"></button>
+  </div>
+</div>
+
+<!-- NAV BAR -->
+<nav class="Nav">
+		<button onclick="FriendListdrpdwn()" name="" class="friendsIcon"></button>
+		<button onclick="openDMs()" class="messageIcon"></button>
+		
+		<input type="text" name="" placeholder="enter your search here">
+		<button name="" class="searchIcon"></button>
+</nav>
+	
+
+
+<div class="profile">
+	<h1> Profile </h1> 
+    <div id="IconUser">
+        <!--<img class="userIcon" id="Iconuser" src="">-->
+    </div>
+	
+	<div class="buttoneditIcon">
+
+		<input type="image" src="MediaFiles/editIcon.png" name="" class="editIcon">
+	</div>
+	
+	<a onclick="dim();editProfilefunction();hideProfileDisplayfunction();" class="editProfileButton"></a>
+	<!--<button class=editProfileButton></button>-->
+
+	<!-- USUAL PROFILE DISPLAY -->
+	<div class="userInfo" id="userDisplay">
+		<form id="userInfo">
+			<h2 style="text-align: center;"><label id="nameUser"> </label></h2>
+			<h2>Year: </h2> <label><h2 id="yearUser"> </h2></label>
+			<h2>Profile: </h2> <label><h2 id="profileUser"> </h2></label>
+			<h2>Specialty: </h2> <label><h2 id="specialityUser"> </h2></label>
+		</form>
+		
+		<div class="logOffBt">
+		<button class="btLogOff draw-border"> <h2>Log off</h2></button>
+		</div>
+	</div>
+	<!-- END USUAL PROFILE DISPLAY -->
+
+	<!-- FORM THAT SHOWS AFTER CLICKING EDIT BUTTON -->
+	<div id="editProfileForm">
+		<form class="editProfileForm">
+			<h2 class="formheader">Voornaam Achternaam</h2>
+			<label for="Year"><h2>Year: </h2></label>
+			<input type="text" name="" id="Year" name="Year"placeholder="enter your year">
+			<label for="Profile"><h2>Profile: </h2></label>
+			<input type="text" name="" id="Profile" name="Profile" placeholder="enter your profile">
+			<label for="Specialty"><h2>Specialty: </h2></label>
+			<input type="text" name="" id="Specialty" name="specialty" placeholder="enter your specialty">
+		</form>
+
+		<div class="logOffBt">
+		<button onclick="dim(false);editProfilefunction(false);showProfileDisplayfunction();" class="btLogOff draw-border"> <h2>Save</h2></button>
+		</div>
+	</div>
+	<!-- END OF EDIT PRODILE FORM -->
+</div>
+
+<main class="mainMenu">
+	<div class="flex-container">
+		<button class="floorNr">1</button>
+		<button class="floorNr">2</button>
+		<button class="floorNr">3</button>
+		<button class="floorNr">4</button>
+	</div>
+	<div class="grid-container">
+		<div class="classroom">
+			<p>2.08</p>
+			
+				<input onclick="openPopup();" type="image" src="MediaFiles/UserIcon2.png" name="">
+					<input onclick="openPopup();" type="image" src="MediaFiles/UserIcon3.jpg" name="">
+					<!-- <input type="image" src="MediaFiles/UserIcon4.png" name=""> -->
+					<input onclick="openPopup();" type="image" src="MediaFiles/UserIcon5.jpg" name="">
+					<input onclick="openPopup();" type="image" src="MediaFiles/UserIcon6.jpg" name="">
+					<input onclick="openPopup();" type="image" src="MediaFiles/UserIcon7.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon8.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon9.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon10.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon11.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon12.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon13.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon14.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon15.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon16.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon17.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon18.jpg" name="">
+					<input type="image" src="MediaFiles/UserIcon19.jpg" name="">
+					
+					<input type="image" src="MediaFiles/UserIcon21.gif" name="">
+					<input type="image" src="MediaFiles/UserIcon22.jpg" name="">
+
+		</div>
+		<div class="classroom" id="class209">
+			<p>2.09</p>
+		</div>
+		<div class="classroom">
+			<p>2.10</p>
+		</div>
+		<div class="classroom">
+			<p>2.11</p>
+		</div>
+		<div class="classroom">
+			<p>2.12</p>
+		</div>
+		<div class="classroom">
+			<p>2.13</p>
+		</div>
+	</div>
+
+	
+</main>
+
+
+<div class="dropdown">
+<!--	<div class="arrow-up"></div>-->
+	<div id="myDropdown" class="dropdown-content">
+        <form>
+			<br>
+   			<label>Friend1</label> <br>
+   			<label>Friend2</label> <br>
+   			<label>Friend3</label>
+        </form>
+ 	</div>
+ </div>
+
+<script>
+// FUNCTION FOR PROFILE POP-UP
+// define "modal"
+var modal = document.getElementById('ModalProfile');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
+
+// When the user clicks on the button, open the modal 
+function openPopup() {
+	if (modal.style.display === "none") {
+    modal.style.display = "block";
+	}
+	else {
+		modal.style.display = 'block';
+	}
+}
+    
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// FUNCTION FOR DIRECT MESSAGES POP-UP
+
+// define "modalMes"
+var modalMes = document.getElementById('ModalMessage');
+
+// When the user clicks on the button, open the modal 
+function openDMs() {
+	if (modalMes.style.display === "none") {
+    modalMes.style.display = "block";
+	}
+	else {
+		modalMes.style.display = 'block';
+	}
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+span2.onclick = function() {
+    modalMes.style.display = "none";
+}
+
+
+// OPEN FRIENDLIST DROPDOWN
+function FriendListdrpdwn() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+    //TOGGLE BETWEEN USER PROFILE AND EDIT PROFILE
+function editProfilefunction(bool) {
+	if (typeof bool=='undefined') bool=true;
+	var x = document.getElementById("editProfileForm").style.display=(bool?'block':'none')
+}
+editProfilefunction(true);
+editProfilefunction(false);
+
+function hideProfileDisplayfunction() {
+	var x = document.getElementById("userDisplay");
+	    if (x.style.display === "block") {
+	        x.style.display = "none";
+	    } else {
+	        x.style.display = "none";
+	    }
+}
+
+function showProfileDisplayfunction() {
+	var x = document.getElementById("userDisplay");
+	    if (x.style.display === "none") {
+	        x.style.display = "block";
+	    } else {
+	        x.style.display = "block";
+	    }
+}
+    
+    //DIMMER
+
+function dim(bool)
+{
+    if (typeof bool=='undefined') bool=true; // so you can shorten dim(true) to dim()
+    document.getElementById('dimmer').style.display=(bool?'block':'none');
+}    
+
+dim(true); // on
+dim(false); // off
+
+</script>
+
+</body>
+</html>
